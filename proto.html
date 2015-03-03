@@ -98,6 +98,9 @@
 	.profile-view{
 		text-align: center;
 	}
+	.wallet-view button{
+		margin-top: 20px;
+	}
 	.header{
 		padding: 10px;
 	}
@@ -125,6 +128,14 @@
 	}
 	.wallet-view{
 		text-align: center;
+	}
+	.wallet-view .upload{
+		width: 150px;
+	}
+	.wallet-view .fa-upload{
+
+		margin-top: 25px;
+		font-size: 50px;
 	}
 	.small.positioned{
 		position: absolute;
@@ -188,6 +199,12 @@ Chandler, AZ 85286</textarea>
 		</div>
 			<div class="profile-image small positioned"></div>
 			<div class="bus-pass"></div>
+			<div>
+				<button type="button" class="btn btn-warning upload">Upload<br/><i class="fa fa-upload"></i></button>
+			</div>
+			<div>
+				<button type="submit" class="btn btn-primary btn-lg save-btn">Save</button>
+			</div>
 		</div>
 	</div>
 	<script>
@@ -202,7 +219,12 @@ Chandler, AZ 85286</textarea>
 		
 		$(".save-btn").click(function(){
 			$(".main-view").show();
-			$(".profile-view").hide();	
+			$(".profile-view").hide();
+		})
+
+		$(".wallet-view button").click(function(){
+			$(".main-view").show();
+			$(".wallet-view").hide();
 		})
 
 	</script>
